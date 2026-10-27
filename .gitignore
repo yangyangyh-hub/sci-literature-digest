@@ -1,0 +1,13 @@
+# Keep private settings, credentials, source data and generated reports out of the repository.
+.env
+.env.*
+profile.json
+*.local.json
+*.xlsx
+*.xls
+*.csv
+*.tsv
+_codex_temp/
+__pycache__/
+*.pyc
+reports/

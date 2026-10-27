@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "timezone": "UTC",
+  "date_window": {
+    "default_days": 7,
+    "backfill_outside_window": false
+  },
+  "categories": [
+    {
+      "name": "Crop drought response",
+      "terms": ["drought tolerance", "crop physiology", "stress genomics"],
+      "target_count": 5
+    }
+  ],
+  "species": ["Arabidopsis thaliana"],
+  "sources": {
+    "core": ["Crossref", "OpenAlex", "Europe PMC", "PubMed"],
+    "optional": ["publisher article pages", "Web of Science Starter", "Google Scholar alerts"],
+    "publisher_targets": ["Springer Nature"],
+    "china_sponsored_english_scie": false,
+    "wos": {
+      "api_key_env": "WOS_STARTER_API_KEY",
+      "api_key_file": null
+    }
+  },
+  "screening": {
+    "exclude_publishers": [],
+    "exclude_journals": [],
+    "journal_metrics": null
+  },
+  "output": {
+    "directory": null,
+    "filename_pattern": "literature-digest-{start}-{end}.md",
+    "language": "zh-CN",
+    "summary_chinese_chars": [200, 350]
+  }
+}
